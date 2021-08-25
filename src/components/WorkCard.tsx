@@ -1,6 +1,7 @@
 import { FC, useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { useMediaQuery } from "react-responsive";
 
 interface Props {
   title: string;
@@ -21,6 +22,7 @@ const WorkCard: FC<Props> = ({
 }: Props) => {
   const controls = useAnimation();
   const [ref, inView] = useInView();
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
 
   useEffect(() => {
     if (inView) {
@@ -34,7 +36,9 @@ const WorkCard: FC<Props> = ({
       initial="hidden"
       variants={{
         visible: { x: 0, opacity: 1 },
-        hidden: { x: index % 2 === 0 ? -50 : 50, opacity: 0 },
+        hidden: isTabletOrMobile
+          ? { x: index % 2 === 0 ? -30 : 30, opacity: 0 }
+          : { x: index % 2 === 0 ? -50 : 50, opacity: 0 },
       }}
       transition={{
         duration: 0.4,

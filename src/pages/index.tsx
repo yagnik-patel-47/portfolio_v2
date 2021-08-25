@@ -48,7 +48,8 @@ const Home: FC = () => {
         <link
           href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap"
           rel="stylesheet"
-        ></link>
+        />
+        <link rel="preload" as="image" href="/profile.png" sizes="100%" />
       </Head>
       {typeof window !== "undefined" && <DynamicNav />}
       <Hero />

@@ -19,7 +19,7 @@ const Nav: FC = () => {
       if (typeof window !== "undefined") {
         dispatch(
           setNavHeight(
-            parseInt(window.getComputedStyle(navRef.current).height) + 20
+            parseInt(window.getComputedStyle(navRef.current).height) + 30
           )
         );
       }

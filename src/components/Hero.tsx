@@ -6,7 +6,13 @@ const Hero: FC = () => {
   return (
     <div className="py-12 px-8 md:px-24 flex flex-col items-center">
       <div className="rounded-full overflow-hidden">
-        <Image src="/profile.png" alt="Profile" width={150} height={150} />
+        <Image
+          src="/profile.png"
+          alt="Profile"
+          width={150}
+          height={150}
+          priority={true}
+        />
       </div>
       <h1 className="text-white text-2xl font-openSans font-bold mt-6">
         Hi 👋🏻, I'm Yagnik.
