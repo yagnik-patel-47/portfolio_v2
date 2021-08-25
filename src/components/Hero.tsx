@@ -17,7 +17,7 @@ const Hero: FC = () => {
         initial={{ opacity: 0 }}
       >
         Building digital
-        <br /> wesbites, web apps, and
+        <br /> websites, web apps, and
         <br /> experience.
       </motion.h1>
       <motion.p
