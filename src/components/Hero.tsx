@@ -4,7 +4,10 @@ import { motion } from "framer-motion";
 
 const Hero: FC = () => {
   return (
-    <div className="py-12 px-8 md:px-24 flex flex-col items-center">
+    <motion.div
+      className="py-12 px-8 md:px-24 flex flex-col items-center"
+      layout
+    >
       <div className="rounded-full overflow-hidden">
         <Image
           src="/profile.png"
@@ -39,7 +42,7 @@ const Hero: FC = () => {
         love to learn new stuff. Looking for a helping community, which can help
         me grow further.
       </motion.p>
-    </div>
+    </motion.div>
   );
 };
 

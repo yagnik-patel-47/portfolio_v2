@@ -32,7 +32,7 @@ a {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  animation: gradient-big-text 2s ease-in-out 1 forwards;
+  animation: gradient-big-text 4s ease-in-out infinite forwards;
 }
 
 .name-gradient {
@@ -53,12 +53,25 @@ a {
 }
 
 @keyframes gradient-big-text {
-  from {
+  0%,
+  100% {
     background-size: 500% 500%;
     background-position: 100% 100%;
   }
-  to {
-    /* background-position-x: 100%; */
+  50% {
     background-size: 100% 100%;
   }
+}
+
+::-webkit-scrollbar {
+  background-color: #202324;
+  color: #aba499;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: #181a1b;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #454a4d;
 }

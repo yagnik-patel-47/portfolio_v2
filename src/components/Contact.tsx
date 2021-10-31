@@ -25,19 +25,18 @@ const Contact: FC = () => {
               Let's have a Chat.
             </h1>
             <p className="text-white-secondary text-xl md:text-2xl font-light md:w-2/3">
-              Try to connect with me on Discord, since i'll be more active on
-              it.
+              Try to contact me on Discord, since i'll be more active on it.
             </p>
             <a
               href="mailto:coderisaddicted@gmail.com"
-              className="bg-blue-600 rounded-full py-4 px-12 w-max text-xl md:text-2xl !mt-20"
+              className="bg-blue-600 rounded-full py-3 px-8 md:py-4 md:px-12 w-max text-lg md:text-xl !mt-20"
             >
               Get in Touch
             </a>
           </div>
         </div>
         <div
-          className="flex flex-col items-center mt-8 md:mt-0"
+          className="flex flex-col items-start md:items-center mt-8 md:mt-0"
           style={{ flexBasis: "50%" }}
         >
           <ul className="text-white-secondary font-openSans font-bold space-y-5 md:text-2xl text-lg">

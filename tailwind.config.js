@@ -12,7 +12,7 @@ module.exports = {
         openSans: ["Open Sans", "sans-serif"],
       },
       colors: {
-        "bg-primary": "#161415",
+        "bg-primary": "#101112",
         "text-secondary": "#5F5F5F",
         "white-secondary": "#C3C1BA",
         "bg-surface": "#202022",
