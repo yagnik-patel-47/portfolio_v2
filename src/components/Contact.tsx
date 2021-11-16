@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { useAppSelector } from "../redux/reduxHooks";
 import { HiMail } from "react-icons/hi";
-import { FaInstagram, FaTwitter, FaDiscord } from "react-icons/fa";
+import { FaInstagram, FaTwitter, FaDiscord, FaGithub } from "react-icons/fa";
 
 const Contact: FC = () => {
   const navHeight = useAppSelector((store) => store.navHeight);
@@ -42,6 +42,15 @@ const Contact: FC = () => {
           <ul className="text-white-secondary font-openSans font-bold space-y-5 md:text-2xl text-lg">
             <li>
               <a
+                href="https://github.com/CodeAddicted0"
+                className="flex space-x-5 items-center hover:text-white"
+              >
+                <FaGithub size={30} color="#3b82f6" />
+                <p>My Github</p>
+              </a>
+            </li>
+            <li>
+              <a
                 href="mailto:coderisaddicted@gmail.com"
                 className="flex space-x-5 items-center hover:text-white"
               >
@@ -55,7 +64,7 @@ const Contact: FC = () => {
                 className="flex space-x-5 items-center hover:text-white"
               >
                 <FaDiscord size={30} color="#3b82f6" />
-                <p>ON DISCORD</p>
+                <p>On Discord</p>
               </a>
             </li>
             <li>
@@ -64,7 +73,7 @@ const Contact: FC = () => {
                 className="flex space-x-5 items-center hover:text-white"
               >
                 <FaTwitter size={30} color="#3b82f6" />
-                <p>ON TWITTER</p>
+                <p>On Twitter</p>
               </a>
             </li>
             <li>
@@ -73,7 +82,7 @@ const Contact: FC = () => {
                 className="flex space-x-5 items-center hover:text-white"
               >
                 <FaInstagram size={30} color="#3b82f6" />
-                <p>ON INSTAGRAM</p>
+                <p>On Instagram</p>
               </a>
             </li>
           </ul>
