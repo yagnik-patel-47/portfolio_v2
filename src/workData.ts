@@ -1,7 +1,15 @@
 const projects = [
   {
+    title: "Dischat",
+    techTitle: "react typescript",
+    description:
+      "A chat app having very basic features of discord with animations.",
+    demoLink: "https://dischat.vercel.app",
+    repoLink: "https://github.com/CodeAddicted0/dischat_fronted",
+  },
+  {
     title: "Moments",
-    techTitle: "typescript",
+    techTitle: "react typescript",
     description:
       "A social media app clone having features similar to Instagram.",
     demoLink: "https://moments-sma.vercel.app",
@@ -9,14 +17,14 @@ const projects = [
   },
   {
     title: "WhatsApp 2.0",
-    techTitle: "javascript",
+    techTitle: "react",
     description: "A whatsapp clone having all basic features of whatsapp.",
     demoLink: "https://whatsapp2-0-ca.vercel.app",
     repoLink: "https://github.com/CodeAddicted0/whatsapp2.0",
   },
   {
     title: "RPS Multiplayer",
-    techTitle: "javascript",
+    techTitle: "react & socket.io",
     description:
       "An online multiplayer rock paper scissor game which runs completely on browser.",
     demoLink: "https://multiplayer-rps.netlify.app",
