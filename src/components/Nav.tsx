@@ -1,4 +1,4 @@
-import { motion, AnimatePresence, AnimateSharedLayout } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { FC, useState, useRef, useEffect } from "react";
 import { BsPerson } from "react-icons/bs";
 import Link from "next/link";

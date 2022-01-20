@@ -1,6 +1,5 @@
-import { FC, useEffect } from "react";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import { FC } from "react";
+import { motion } from "framer-motion";
 import { useMediaQuery } from "react-responsive";
 
 interface Props {
@@ -20,20 +19,12 @@ const WorkCard: FC<Props> = ({
   repoLink,
   index,
 }: Props) => {
-  const controls = useAnimation();
-  const [ref, inView] = useInView();
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
-
-  useEffect(() => {
-    if (inView) {
-      controls.start("visible");
-    }
-  }, [controls, inView]);
 
   return (
     <motion.div
-      animate={controls}
       initial="hidden"
+      whileInView="visible"
       variants={{
         visible: { x: 0, opacity: 1 },
         hidden: isTabletOrMobile
@@ -46,8 +37,8 @@ const WorkCard: FC<Props> = ({
         type: "spring",
         stiffness: 200,
       }}
+      viewport={{ once: true }}
       className="bg-bg-surface text-white px-10 py-8 flex flex-col space-y-2"
-      ref={ref}
     >
       <p className="text-white-secondary uppercase font-medium tracking-widest text-sm">
         {techTitle}

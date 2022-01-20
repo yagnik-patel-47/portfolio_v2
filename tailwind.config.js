@@ -1,10 +1,8 @@
 module.exports = {
-  mode: "jit",
-  purge: [
+  content: [
     "./src/pages/**/*.{js,ts,jsx,tsx}",
     "./src/components/**/*.{js,ts,jsx,tsx}",
   ],
-  darkMode: "class",
   theme: {
     extend: {
       fontFamily: {
@@ -15,12 +13,9 @@ module.exports = {
         "bg-primary": "#101112",
         "text-secondary": "#5F5F5F",
         "white-secondary": "#C3C1BA",
-        "bg-surface": "#202022",
+        "bg-surface": "#191b1c",
       },
     },
-  },
-  variants: {
-    extend: {},
   },
   plugins: [],
 };

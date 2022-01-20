@@ -39,9 +39,9 @@ const TechStack: FC = () => {
             <li>NodeJS</li>
             <li>Express</li>
             <li>Socket.io</li>
-            <li>MongoDB (learning)</li>
-            <li>Rest API</li>
-            <li>GraphQL</li>
+            <li>MongoDB, PostgreSQL (learning)</li>
+            <li>Mongoose, TypeORM (learning)</li>
+            <li>GraphQL (Apollo)</li>
           </ul>
         </div>
         <div className="bg-bg-surface border-t-4 border-blue-500 rounded-md py-12 px-16 flex flex-col space-y-6 items-start">
