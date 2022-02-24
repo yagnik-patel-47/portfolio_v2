@@ -3,7 +3,6 @@ import Hero from "../components/Hero";
 import Work from "../components/Work";
 import TechStack from "../components/TechStack";
 import Contact from "../components/Contact";
-import Footer from "../components/Footer";
 import { FC, useEffect, useState } from "react";
 import ScrollTop from "../components/ScrollTop";
 import dynamic from "next/dynamic";
@@ -58,7 +57,6 @@ const Home: FC = () => {
         <Work />
         <TechStack />
         <Contact />
-        <Footer />
       </AnimateSharedLayout>
       {scrollTop && <ScrollTop />}
     </>

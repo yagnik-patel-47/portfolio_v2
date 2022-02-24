@@ -42,7 +42,7 @@ const Contact: FC = () => {
           <ul className="text-white-secondary font-openSans font-bold space-y-5 md:text-2xl text-lg">
             <li>
               <a
-                href="https://github.com/CodeAddicted0"
+                href="https://github.com/Yagnik-Patel-47"
                 className="flex space-x-5 items-center hover:text-white"
               >
                 <FaGithub size={30} color="#3b82f6" />
