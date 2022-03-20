@@ -69,7 +69,7 @@ const Contact: FC = () => {
             </li>
             <li>
               <a
-                href="https://twitter.com/YagnikP26385066"
+                href="https://twitter.com/Yagnik__Patel_"
                 className="flex space-x-5 items-center hover:text-white"
               >
                 <FaTwitter size={30} color="#3b82f6" />
