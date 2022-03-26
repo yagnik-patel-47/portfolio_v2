@@ -1,12 +1,14 @@
 import { FC } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useAppSelector } from "../redux/reduxHooks";
 
 const Hero: FC = () => {
+  const nabHeight = useAppSelector((state) => state.navHeight);
   return (
     <motion.div
-      className="py-12 px-8 md:px-24 flex flex-col items-center"
-      layout
+      className={`py-12 px-8 md:px-24 flex flex-col items-center`}
+      style={{ marginTop: `${nabHeight}px` }}
     >
       <div className="rounded-full overflow-hidden">
         <Image
@@ -15,6 +17,7 @@ const Hero: FC = () => {
           width={150}
           height={150}
           priority={true}
+          quality={100}
         />
       </div>
       <h1 className="text-white text-2xl font-openSans font-bold mt-6">

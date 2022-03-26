@@ -6,7 +6,7 @@ const navHeightSlice = createSlice({
   name: "profile",
   initialState,
   reducers: {
-    setNavHeight: (state, action: PayloadAction<number>) => {
+    setNavHeight: (_state, action: PayloadAction<number>) => {
       return action.payload;
     },
   },

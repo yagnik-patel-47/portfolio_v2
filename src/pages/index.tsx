@@ -6,7 +6,6 @@ import Contact from "../components/Contact";
 import { FC, useEffect, useState } from "react";
 import ScrollTop from "../components/ScrollTop";
 import dynamic from "next/dynamic";
-import { AnimateSharedLayout } from "framer-motion";
 
 const DynamicNav = dynamic(() => import("../components/Nav"));
 
@@ -35,13 +34,11 @@ const Home: FC = () => {
         <title>Yagnik Patel</title>
         <link rel="preload" as="image" href="/profile.png" sizes="100%" />
       </Head>
-      <AnimateSharedLayout>
-        {typeof window !== "undefined" && <DynamicNav />}
-        <Hero />
-        <Work />
-        <TechStack />
-        <Contact />
-      </AnimateSharedLayout>
+      {typeof window !== "undefined" && <DynamicNav />}
+      <Hero />
+      <Work />
+      <TechStack />
+      <Contact />
       {scrollTop && <ScrollTop />}
     </>
   );

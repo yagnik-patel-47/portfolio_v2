@@ -2,17 +2,10 @@ import { FC } from "react";
 import { RiComputerLine } from "react-icons/ri";
 import { FiDatabase } from "react-icons/fi";
 import { AiOutlineHeart } from "react-icons/ai";
-import { useAppSelector } from "../redux/reduxHooks";
 
 const TechStack: FC = () => {
-  const navHeight = useAppSelector((store) => store.navHeight);
-
   return (
-    <section
-      id="techstack"
-      className="space-y-12 px-8 md:px-24 mt-16"
-      style={{ scrollMarginTop: `${navHeight}px` }}
-    >
+    <section id="techstack" className="space-y-12 px-8 md:px-24 mt-16">
       <h1 className="text-white font-openSans text-center text-4xl font-bold mt-6 leading-tight tracking-tighter">
         My Tech Stack
       </h1>

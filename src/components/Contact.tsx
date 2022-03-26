@@ -1,17 +1,10 @@
 import { FC } from "react";
-import { useAppSelector } from "../redux/reduxHooks";
 import { HiMail } from "react-icons/hi";
 import { FaInstagram, FaTwitter, FaDiscord, FaGithub } from "react-icons/fa";
 
 const Contact: FC = () => {
-  const navHeight = useAppSelector((store) => store.navHeight);
-
   return (
-    <section
-      id="contact"
-      className="space-y-12 px-8 md:px-24 md:mt-12"
-      style={{ scrollMarginTop: `${navHeight}px` }}
-    >
+    <section id="contact" className="space-y-12 px-8 md:px-24 md:mt-12">
       <h1 className="text-white font-openSans text-center text-4xl font-bold mt-6 leading-tight tracking-tighter">
         Contact
       </h1>
