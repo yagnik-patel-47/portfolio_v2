@@ -7,7 +7,7 @@ const Hero: FC = () => {
   const nabHeight = useAppSelector((state) => state.navHeight);
   return (
     <motion.div
-      className={`py-12 px-8 md:px-24 flex flex-col items-center`}
+      className={`py-24 px-8 md:px-24 lg:px-60 flex flex-col items-center`}
       style={{ marginTop: `${nabHeight}px` }}
     >
       <div className="rounded-full overflow-hidden">
@@ -32,19 +32,6 @@ const Hero: FC = () => {
         <br /> websites, web apps, and
         <br /> experience.
       </motion.h1>
-      <motion.p
-        className="md:w-1/2 mx-auto text-center mt-6 text-white-secondary"
-        animate={{
-          opacity: 1,
-        }}
-        initial={{ opacity: 0 }}
-      >
-        I’m an <span className="font-medium">11th-grade student</span> as a{" "}
-        <span className="font-medium">self-taught web developer</span>. Since I
-        am learning web development, I’m curious and passionate about it and
-        love to learn new stuff. Looking for a helping community, which can help
-        me grow further.
-      </motion.p>
     </motion.div>
   );
 };

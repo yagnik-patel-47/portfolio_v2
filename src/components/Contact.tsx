@@ -4,10 +4,13 @@ import { FaInstagram, FaTwitter, FaDiscord, FaGithub } from "react-icons/fa";
 
 const Contact: FC = () => {
   return (
-    <section id="contact" className="space-y-12 px-8 md:px-24 md:mt-12">
-      <h1 className="text-white font-openSans text-center text-4xl font-bold mt-6 leading-tight tracking-tighter">
+    <section
+      id="contact"
+      className="space-y-12 px-8 md:px-24 md:mt-12 lg:px-60"
+    >
+      <h2 className="text-white font-openSans text-center text-3xl md:text-4xl font-semibold mt-6 leading-tight tracking-tighter">
         Contact
-      </h1>
+      </h2>
       <div className="flex text-white py-8 md:py-20 items-center flex-col md:flex-row">
         <div
           className="flex flex-col items-center"
@@ -17,12 +20,12 @@ const Contact: FC = () => {
             <h1 className="font-medium text-3xl md:text-5xl">
               Let's have a Chat.
             </h1>
-            <p className="text-white-secondary text-xl md:text-2xl font-light md:w-2/3">
-              Try to contact me on Discord, since i'll be more active on it.
+            <p className="text-white-secondary text-xl md:text-2xl font-light">
+              Try to contact me through mail.
             </p>
             <a
-              href="mailto:coderisaddicted@gmail.com"
-              className="bg-blue-600 rounded-full py-3 px-8 md:py-4 md:px-12 w-max text-lg md:text-xl !mt-20"
+              href="mailto:yagnik47.dev@gmail.com"
+              className="bg-blue-600 hover:bg-blue-700 rounded-md transition-all hover:rounded-xl py-3 px-8 md:py-4 md:px-12 w-max text-lg md:text-xl !mt-20"
             >
               Get in Touch
             </a>
@@ -44,11 +47,11 @@ const Contact: FC = () => {
             </li>
             <li>
               <a
-                href="mailto:coderisaddicted@gmail.com"
+                href="mailto:yagnik47.dev@gmail.com"
                 className="flex space-x-5 items-center hover:text-white"
               >
                 <HiMail size={30} color="#3b82f6" />
-                <p>coderisaddicted@gmail.com</p>
+                <p>yagnik47.dev@gmail.com</p>
               </a>
             </li>
             <li>
@@ -71,7 +74,7 @@ const Contact: FC = () => {
             </li>
             <li>
               <a
-                href="https://www.instagram.com/coding_freak._"
+                href="https://www.instagram.com/yagnik._._.patel"
                 className="flex space-x-5 items-center hover:text-white"
               >
                 <FaInstagram size={30} color="#3b82f6" />

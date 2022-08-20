@@ -28,7 +28,7 @@ const Nav: FC = () => {
   return (
     <LayoutGroup>
       <motion.nav
-        className={`flex py-6 px-8 md:px-24 justify-between items-center fixed w-full top-0 bg-bg-surface z-50 overflow-hidden ${
+        className={`flex py-6 px-8 md:px-24 lg:px-60 justify-between items-center fixed w-full top-0 bg-bg-surface z-50 overflow-hidden ${
           isTabletOrMobile ? "flex-col" : "flex-row"
         }`}
         ref={navRef}
@@ -56,7 +56,7 @@ const Nav: FC = () => {
             layout
           >
             <motion.div className="border border-[#303436] rounded-full flex justify-center items-center overflow-hidden h-12 w-12">
-              <AnimatePresence exitBeforeEnter>
+              <AnimatePresence mode="wait">
                 {animationState === "notHovered" && (
                   <motion.figure
                     animate={{ x: 0, scale: 1, rotate: 0 }}

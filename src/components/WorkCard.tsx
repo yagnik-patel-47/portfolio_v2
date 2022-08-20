@@ -28,8 +28,14 @@ const WorkCard: FC<Props> = ({
       variants={{
         visible: { x: 0, opacity: 1 },
         hidden: isTabletOrMobile
-          ? { x: index % 2 === 0 ? -30 : 30, opacity: 0 }
-          : { x: index % 2 === 0 ? -50 : 50, opacity: 0 },
+          ? {
+              x: index % 2 === 0 ? -30 : 30,
+              opacity: 0,
+            }
+          : {
+              x: index % 2 === 0 ? -50 : 50,
+              opacity: 0,
+            },
       }}
       transition={{
         duration: 0.4,

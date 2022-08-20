@@ -12,6 +12,7 @@
 
 html {
   scroll-behavior: smooth;
+  color-scheme: dark light;
 }
 
 html,
@@ -62,15 +63,17 @@ a {
   }
 }
 
-::-webkit-scrollbar {
-  background-color: #202324;
-  color: #aba499;
-}
+@supports not (color-scheme: dark light) {
+  ::-webkit-scrollbar {
+    background-color: #202324;
+    color: #aba499;
+  }
 
-::-webkit-scrollbar-corner {
-  background-color: #181a1b;
-}
+  ::-webkit-scrollbar-corner {
+    background-color: #181a1b;
+  }
 
-::-webkit-scrollbar-thumb {
-  background-color: #454a4d;
+  ::-webkit-scrollbar-thumb {
+    background-color: #454a4d;
+  }
 }
