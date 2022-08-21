@@ -27,7 +27,7 @@ const Hero: FC = () => {
       </h1>
       <p className="text-gray-300 text-md mt-2">Self taught Web Developer</p>
       <motion.h1
-        className="font-openSans text-center text-4xl md:text-6xl font-bold mt-6 leading-tight tracking-tighter gradient-text"
+        className="font-openSans text-center text-3xl sm:text-4xl md:text-6xl font-bold mt-6 leading-tight tracking-tighter gradient-text"
         animate={{ opacity: 1, transition: { duration: 0.7 } }}
         initial={{ opacity: 0 }}
       >
@@ -37,7 +37,7 @@ const Hero: FC = () => {
       </motion.h1>
       <motion.a
         href="#work"
-        className="inline-block px-6 py-3 mt-10 cursor-pointer bg-gray-200 text-black rounded-xl text-lg"
+        className="inline-block px-6 py-3 mt-10 cursor-pointer bg-slate-200 text-black rounded-xl md:text-lg text-md"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.9 }}
       >
