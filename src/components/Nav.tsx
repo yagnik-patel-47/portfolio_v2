@@ -6,6 +6,36 @@ import { useAppDispatch } from "../redux/reduxHooks";
 import { setNavHeight } from "../redux/navHeight";
 import { useMediaQuery } from "react-responsive";
 
+const variants = {
+  open: {
+    transition: { staggerChildren: 0.05, delayChildren: 0.1 },
+  },
+  closed: {
+    transition: { staggerChildren: 0.05, staggerDirection: -1 },
+  },
+};
+
+const item_variants = {
+  initial: {
+    opacity: 0,
+    y: -20,
+  },
+  open: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      y: { stiffness: 1000, velocity: -100 },
+    },
+  },
+  closed: {
+    y: 50,
+    opacity: 0,
+    transition: {
+      y: { stiffness: 1000 },
+    },
+  },
+};
+
 const Nav: FC = () => {
   const [animationState, setAnimationState] = useState("notHovered");
   const navRef = useRef<HTMLElement>(null);
@@ -28,7 +58,7 @@ const Nav: FC = () => {
   return (
     <LayoutGroup>
       <motion.nav
-        className={`flex py-6 px-8 md:px-24 lg:px-60 justify-between items-center fixed w-full top-0 bg-bg-surface z-50 overflow-hidden ${
+        className={`flex py-6 px-8 md:px-24 lg:px-60 justify-between items-center fixed w-full top-0 z-50 overflow-hidden bg-bg-surface ${
           isTabletOrMobile ? "flex-col" : "flex-row"
         }`}
         ref={navRef}
@@ -131,24 +161,37 @@ const Nav: FC = () => {
             <Link href="#contact">Contact</Link>
           </div>
         )}
-        <AnimatePresence>
+        <AnimatePresence mode="popLayout">
           {isTabletOrMobile && hamburgerState && (
             <motion.div
               className="text-white-secondary flex items-center flex-col text-xl space-y-4 mt-6"
-              key={`${hamburgerState}`}
               layout
-              initial={{ scale: 0.8 }}
-              animate={{ scale: 1 }}
+              variants={variants}
+              initial="initial"
+              animate="open"
+              exit="closed"
             >
-              <a onClick={() => setHamburgerState(false)} href="#work">
+              <motion.a
+                variants={item_variants}
+                onClick={() => setHamburgerState(false)}
+                href="#work"
+              >
                 Work
-              </a>
-              <a onClick={() => setHamburgerState(false)} href="#techstack">
+              </motion.a>
+              <motion.a
+                onClick={() => setHamburgerState(false)}
+                href="#techstack"
+                variants={item_variants}
+              >
                 Tech Stack
-              </a>
-              <a onClick={() => setHamburgerState(false)} href="#contact">
+              </motion.a>
+              <motion.a
+                onClick={() => setHamburgerState(false)}
+                href="#contact"
+                variants={item_variants}
+              >
                 Contact
-              </a>
+              </motion.a>
             </motion.div>
           )}
         </AnimatePresence>

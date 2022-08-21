@@ -1,7 +1,4 @@
 import { FC } from "react";
-import { RiComputerLine } from "react-icons/ri";
-import { FiDatabase } from "react-icons/fi";
-import { AiOutlineHeart } from "react-icons/ai";
 
 const TechStack: FC = () => {
   return (
@@ -12,7 +9,7 @@ const TechStack: FC = () => {
       <h2 className="text-white flex flex-col-reverse md:flex-row text-center md:text-left items-center w-full font-openSans font-semibold text-3xl md:text-4xl mt-6 leading-tight tracking-tighter after:mb-8 md:after:mb-0 after:w-1/3 md:after:ml-8 md:after:flex-grow after:h-1 after:bg-white">
         <span>Here is my toolbelt for success.</span>
       </h2>
-      <div>
+      <div className="text-white">
         <h4 className="text-2xl font-medium text-center md:text-left">
           Frontend
         </h4>
@@ -64,14 +61,6 @@ const TechStack: FC = () => {
               className="w-12 md:w-16"
             />
             <p>Typescript</p>
-          </div>
-          <div className="flex flex-col items-center space-y-4 m-4">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
-              alt="firebase logo"
-              className="w-12 md:w-16"
-            />
-            <p>Firebase</p>
           </div>
           <div className="flex flex-col items-center space-y-4 m-4">
             <img
@@ -185,6 +174,14 @@ const TechStack: FC = () => {
               className="w-12 md:w-16"
             />
             <p>Git</p>
+          </div>
+          <div className="flex flex-col items-center space-y-4 m-4">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+              alt="firebase logo"
+              className="w-12 md:w-16"
+            />
+            <p>Firebase</p>
           </div>
         </div>
       </div>
