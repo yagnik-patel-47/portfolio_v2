@@ -13,7 +13,7 @@ const TechStack: FC = () => {
         <h4 className="text-2xl font-medium text-center md:text-left">
           Frontend
         </h4>
-        <div className="flex mt-4 py-4 flex-wrap justify-around md:justify-start md:space-x-12">
+        <div className="grid gap-x-5 grid-cols-[repeat(auto-fit,_minmax(90px,_1fr))] mt-4 py-4 justify-items-center items-center md:grid-cols-[repeat(auto-fit,_minmax(90px,_max-content))]">
           <div className="flex flex-col items-center space-y-4 m-4 md:mx-0">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
@@ -97,7 +97,7 @@ const TechStack: FC = () => {
         <h4 className="text-2xl font-medium mt-4 text-center md:text-left">
           Backend
         </h4>
-        <div className="flex mt-4 py-4 flex-wrap justify-around md:justify-start md:space-x-12">
+        <div className="grid gap-x-5 grid-cols-[repeat(auto-fit,_minmax(90px,_1fr))] mt-4 py-4 justify-items-center items-center md:grid-cols-[repeat(auto-fit,_minmax(90px,_max-content))]">
           <div className="flex flex-col items-center space-y-4 m-4 md:mx-0">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
@@ -150,7 +150,7 @@ const TechStack: FC = () => {
         <h4 className="text-2xl font-medium mt-4 text-center md:text-left">
           Tools
         </h4>
-        <div className="flex mt-4 py-4 flex-wrap justify-around md:justify-start md:space-x-12">
+        <div className="grid gap-x-5 grid-cols-[repeat(auto-fit,_minmax(90px,_1fr))] mt-4 py-4 justify-items-center items-center md:grid-cols-[repeat(auto-fit,_minmax(90px,_max-content))]">
           <div className="flex flex-col items-center space-y-4 m-4 md:mx-0">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
