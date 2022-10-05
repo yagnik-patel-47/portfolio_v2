@@ -69,8 +69,11 @@ const WorkCard: FC<Props> = ({
       </div>
       <p className="text-white-secondary">{description}</p>
       <div className="flex flex-wrap gap-2">
-        {keywords.map((keyword) => (
-          <span className="px-2 py-1 text-xs md:text-sm bg-[#232628] rounded-lg">
+        {keywords.map((keyword, index) => (
+          <span
+            key={index}
+            className="px-2 py-1 text-xs md:text-sm bg-[#232628] rounded-lg"
+          >
             {keyword}
           </span>
         ))}
