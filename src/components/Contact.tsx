@@ -11,7 +11,7 @@ const Contact: FC = () => {
       <h2 className="text-white font-openSans text-center text-3xl md:text-4xl font-semibold mt-6 leading-tight tracking-tighter">
         Contact
       </h2>
-      <div className="flex text-white py-8 md:py-20 items-center flex-col md:flex-row">
+      <div className="flex text-white py-8 md:py-20 items-center flex-col lg:flex-row">
         <div
           className="flex flex-col items-center"
           style={{ flexBasis: "50%" }}
@@ -25,14 +25,14 @@ const Contact: FC = () => {
             </p>
             <a
               href="mailto:yagnik47.dev@gmail.com"
-              className="bg-blue-600 hover:bg-blue-700 rounded-md transition-all hover:rounded-xl py-3 px-8 md:py-4 md:px-12 w-max text-lg md:text-xl !mt-20"
+              className="bg-blue-600 hover:bg-blue-700 rounded-md transition-all hover:rounded-xl py-3 px-8 lg:py-4 lg:px-12 w-max text-lg md:text-xl !mt-20"
             >
               Get in Touch
             </a>
           </div>
         </div>
         <div
-          className="flex flex-col items-start md:items-center mt-8 md:mt-0"
+          className="flex flex-col items-start md:items-center mt-8 lg:mt-0"
           style={{ flexBasis: "50%" }}
         >
           <ul className="text-white-secondary font-openSans font-bold space-y-5 md:text-2xl text-lg">

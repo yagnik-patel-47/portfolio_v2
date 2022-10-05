@@ -25,7 +25,9 @@ const Hero: FC = () => {
       <h1 className="text-white text-3xl font-medium mt-6">
         Hi 👋🏻, I'm Yagnik.
       </h1>
-      <p className="text-gray-300 text-md mt-2">Self taught Web Developer</p>
+      <p className="text-gray-300 text-md mt-2">
+        Self-taught Frontend Developer
+      </p>
       <motion.h1
         className="font-openSans text-center text-3xl sm:text-4xl md:text-6xl font-bold mt-6 leading-tight tracking-tighter gradient-text"
         animate={{ opacity: 1, transition: { duration: 0.7 } }}

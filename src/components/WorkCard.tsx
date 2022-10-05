@@ -1,79 +1,81 @@
-import { FC } from "react";
-import { motion } from "framer-motion";
-import { useMediaQuery } from "react-responsive";
+import { FC, useState } from "react";
+import Image from "next/future/image";
+import { FiGithub } from "react-icons/fi";
+import { RiExternalLinkLine } from "react-icons/ri";
 
 interface Props {
   title: string;
-  techTitle: string;
+  image: string;
   description: string;
   demoLink: string;
   repoLink: string;
-  index: number;
+  shadowColor: string;
+  keywords: string[];
 }
 
 const WorkCard: FC<Props> = ({
   title,
-  techTitle,
+  image,
   description,
   demoLink,
   repoLink,
-  index,
+  shadowColor,
+  keywords,
 }: Props) => {
-  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
-
+  const [isHovered, setIsHovered] = useState(false);
   return (
-    <motion.div
-      initial="hidden"
-      whileInView="visible"
-      variants={{
-        visible: { x: 0, opacity: 1 },
-        hidden: isTabletOrMobile
-          ? {
-              x: index % 2 === 0 ? -30 : 30,
-              opacity: 0,
-            }
-          : {
-              x: index % 2 === 0 ? -50 : 50,
-              opacity: 0,
-            },
-      }}
-      transition={{
-        duration: 0.4,
-        delay: index + 1 !== 1 ? (index + 1) / 10 : 0,
-        type: "spring",
-        stiffness: 200,
-      }}
-      viewport={{ once: true }}
-      className="bg-bg-surface text-white px-10 py-8 flex flex-col space-y-2"
-    >
-      <p className="text-white-secondary uppercase font-medium tracking-widest text-sm">
-        {techTitle}
-      </p>
-      <h3 className="font-medium text-xl tracking-wider">{title}</h3>
-      <p className="text-white-secondary">{description}</p>
-      <div className="flex items-center space-x-2 font-medium text-xs !mt-3">
-        <a
-          href={demoLink}
-          target="_blank"
-          rel="noreferrer"
-          className="uppercase py-2 px-4 rounded-md"
-          style={{
-            background:
-              "linear-gradient(to bottom right, rgba(255, 255, 255, 0.15), rgba(196,196,196, 0.15))",
-          }}
-        >
-          Demo
-        </a>
-        <a
-          href={repoLink}
-          rel="noreferrer"
-          target="_blank"
-          className="uppercase py-2 px-4"
-        >
-          Repository
-        </a>
+    <div className="text-white flex flex-col space-y-2">
+      <div
+        className={`p-2 rounded-lg border-white-secondary/50 border cursor-pointer hover:-translate-y-2 transition`}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+        onClick={() => window.open(demoLink, "_blank")}
+        style={
+          isHovered
+            ? { boxShadow: `0 5px 10px ${shadowColor}` }
+            : { boxShadow: `none` }
+        }
+      >
+        <Image
+          src={image}
+          alt={title}
+          width={1080}
+          height={551}
+          quality={100}
+          priority
+          style={{ width: "100%", height: "auto" }}
+        />
       </div>
-    </motion.div>
+      <div className="flex justify-between items-center !mt-4">
+        <h3 className="font-medium text-xl tracking-wider">{title}</h3>
+        <div className="flex space-x-2 items-center">
+          <a
+            className="hover:text-blue-500"
+            href={repoLink}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FiGithub />
+          </a>
+          <a
+            className="hover:text-blue-500"
+            href={demoLink}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <RiExternalLinkLine />
+          </a>
+        </div>
+      </div>
+      <p className="text-white-secondary">{description}</p>
+      <div className="flex flex-wrap gap-2">
+        {keywords.map((keyword) => (
+          <span className="px-2 py-1 text-xs md:text-sm bg-[#232628] rounded-lg">
+            {keyword}
+          </span>
+        ))}
+      </div>
+    </div>
   );
 };
 

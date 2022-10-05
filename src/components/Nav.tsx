@@ -38,6 +38,7 @@ const item_variants = {
 
 const Nav: FC = () => {
   const [animationState, setAnimationState] = useState("notHovered");
+  const [glassNav, setGlassNav] = useState(false);
   const navRef = useRef<HTMLElement>(null);
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
   const [hamburgerState, setHamburgerState] = useState<boolean>(false);
@@ -54,13 +55,20 @@ const Nav: FC = () => {
         );
       }
     }
+    window.addEventListener("scroll", (e) => {
+      if (window.scrollY > 100) {
+        setGlassNav(true);
+      } else {
+        setGlassNav(false);
+      }
+    });
   }, []);
   return (
     <LayoutGroup>
       <motion.nav
-        className={`flex py-6 px-8 md:px-24 lg:px-60 justify-between items-center fixed w-full top-0 z-50 overflow-hidden bg-bg-surface ${
-          isTabletOrMobile ? "flex-col" : "flex-row"
-        }`}
+        className={`flex py-6 px-8 md:px-24 lg:px-60 justify-between items-center fixed w-full top-0 z-50 overflow-hidden border-b-[1px] border-b-[rgba(248,250,252,0.06)] ${
+          glassNav || hamburgerState ? "glass_nav" : ""
+        } ${isTabletOrMobile ? "flex-col" : "flex-row"}`}
         ref={navRef}
         layout
       >
@@ -164,7 +172,7 @@ const Nav: FC = () => {
         <AnimatePresence mode="popLayout">
           {isTabletOrMobile && hamburgerState && (
             <motion.div
-              className="text-white-secondary flex items-center flex-col text-xl space-y-4 mt-6"
+              className="text-white-secondary flex items-center flex-col text-xl space-y-4 mt-6 w-full pb-6 md:text-2xl"
               layout
               variants={variants}
               initial="initial"

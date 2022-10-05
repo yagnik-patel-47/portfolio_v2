@@ -18,7 +18,7 @@ const TechStack: FC = () => {
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
               alt="html logo"
-              className="w-12 md:w-16"
+              className="w-12 lg:w-16"
             />
             <p>HTML</p>
           </div>
@@ -26,7 +26,7 @@ const TechStack: FC = () => {
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
               alt="css logo"
-              className="w-12 md:w-16"
+              className="w-12 lg:w-16"
             />
             <p>CSS</p>
           </div>
@@ -34,7 +34,7 @@ const TechStack: FC = () => {
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
               alt="javascript logo"
-              className="w-12 md:w-16"
+              className="w-12 lg:w-16"
             />
             <p>Javascript</p>
           </div>
@@ -42,7 +42,7 @@ const TechStack: FC = () => {
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
               alt="react logo"
-              className="w-12 md:w-16"
+              className="w-12 lg:w-16"
             />
             <p>React</p>
           </div>
@@ -50,7 +50,7 @@ const TechStack: FC = () => {
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg"
               alt="nextjs logo"
-              className="invert filter w-12 md:w-16"
+              className="invert filter w-12 lg:w-16"
             />
             <p>NextJS</p>
           </div>
@@ -58,7 +58,7 @@ const TechStack: FC = () => {
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
               alt="typescript logo"
-              className="w-12 md:w-16"
+              className="w-12 lg:w-16"
             />
             <p>Typescript</p>
           </div>
@@ -66,7 +66,7 @@ const TechStack: FC = () => {
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"
               alt="redux logo"
-              className="w-12 md:w-16"
+              className="w-12 lg:w-16"
             />
             <p>Redux</p>
           </div>
@@ -74,14 +74,14 @@ const TechStack: FC = () => {
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg"
               alt="mui logo"
-              className="w-12 md:w-16"
+              className="w-12 lg:w-16"
             />
             <p>MUI</p>
           </div>
           <div className="flex flex-col items-center space-y-4 m-4">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
-              className="w-12 md:w-16"
+              className="w-12 lg:w-16"
             />
             <p>Tailwind</p>
           </div>
@@ -89,7 +89,7 @@ const TechStack: FC = () => {
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
               alt="bootstrap logo"
-              className="w-12 md:w-16"
+              className="w-12 lg:w-16"
             />
             <p>Bootstrap</p>
           </div>
@@ -102,7 +102,7 @@ const TechStack: FC = () => {
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
               alt="nodejs logo"
-              className="w-12 md:w-16"
+              className="w-12 lg:w-16"
             />
             <p>NodeJS</p>
           </div>
@@ -110,7 +110,7 @@ const TechStack: FC = () => {
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
               alt="express logo"
-              className="w-12 md:w-16 filter invert"
+              className="w-12 lg:w-16 filter invert"
             />
             <p>Express</p>
           </div>
@@ -118,7 +118,7 @@ const TechStack: FC = () => {
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg"
               alt="socket.io logo"
-              className="w-12 md:w-16 filter invert"
+              className="w-12 lg:w-16 filter invert"
             />
             <p>Socket.io</p>
           </div>
@@ -126,7 +126,7 @@ const TechStack: FC = () => {
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
               alt="mongodb logo"
-              className="w-12 md:w-16"
+              className="w-12 lg:w-16"
             />
             <p>MongoDB</p>
           </div>
@@ -134,7 +134,7 @@ const TechStack: FC = () => {
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
               alt="postgresql logo"
-              className="w-12 md:w-16"
+              className="w-12 lg:w-16"
             />
             <p>PostgreSQL</p>
           </div>
@@ -142,7 +142,7 @@ const TechStack: FC = () => {
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg"
               alt="graphql logo"
-              className="w-12 md:w-16"
+              className="w-12 lg:w-16"
             />
             <p>GraphQL</p>
           </div>
@@ -155,7 +155,7 @@ const TechStack: FC = () => {
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
               alt="figma logo"
-              className="w-12 md:w-16"
+              className="w-12 lg:w-16"
             />
             <p>Figma</p>
           </div>
@@ -163,7 +163,7 @@ const TechStack: FC = () => {
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
               alt="vscode logo"
-              className="w-12 md:w-16"
+              className="w-12 lg:w-16"
             />
             <p>VS Code</p>
           </div>
@@ -171,7 +171,7 @@ const TechStack: FC = () => {
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
               alt="git logo"
-              className="w-12 md:w-16"
+              className="w-12 lg:w-16"
             />
             <p>Git</p>
           </div>
@@ -179,7 +179,7 @@ const TechStack: FC = () => {
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
               alt="firebase logo"
-              className="w-12 md:w-16"
+              className="w-12 lg:w-16"
             />
             <p>Firebase</p>
           </div>
