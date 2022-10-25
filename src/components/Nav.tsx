@@ -67,7 +67,7 @@ const Nav: FC = () => {
     <LayoutGroup>
       <motion.nav
         className={`flex py-6 px-8 md:px-24 lg:px-60 justify-between items-center fixed w-full top-0 z-50 overflow-hidden border-b-[1px] border-b-[rgba(248,250,252,0.06)] ${
-          glassNav || hamburgerState ? "glass_nav" : ""
+          glassNav || hamburgerState ? "glass_bg" : ""
         } ${isTabletOrMobile ? "flex-col" : "flex-row"}`}
         ref={navRef}
         layout
@@ -144,20 +144,20 @@ const Nav: FC = () => {
               onClick={() => setHamburgerState(!hamburgerState)}
             >
               <motion.div
-                animate={{
-                  rotate: hamburgerState ? 40 : 0,
+                style={{
                   transformOrigin: "top left",
+                  transform: hamburgerState ? "rotate(40deg)" : "rotate(0)",
                   marginBottom: hamburgerState ? "20px" : "10px",
                 }}
-                className="bg-white h-0.5 rounded-full w-9"
+                className="bg-white h-0.5 rounded-full w-9 transition-all duration-200"
               ></motion.div>
               <motion.div
-                animate={{
-                  rotate: hamburgerState ? -40 : 0,
+                style={{
                   transformOrigin: "bottom left",
+                  transform: hamburgerState ? "rotate(-40deg)" : "rotate(0)",
                   marginTop: hamburgerState ? "20px" : "10px",
                 }}
-                className="bg-white h-0.5 rounded-full w-9"
+                className="bg-white h-0.5 rounded-full w-9 transition duration-200"
               ></motion.div>
             </motion.div>
           )}

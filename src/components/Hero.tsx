@@ -39,9 +39,9 @@ const Hero: FC = () => {
       </motion.h1>
       <motion.a
         href="#work"
-        className="inline-block px-6 py-3 mt-10 cursor-pointer bg-slate-200 text-black rounded-xl md:text-lg text-md"
+        className="inline-block px-6 py-3 mt-10 cursor-pointer bg-bg-surface rounded-xl md:text-lg text-md no-tap-highlight"
         whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.9 }}
+        whileTap={{ scale: 0.95 }}
       >
         More about me
       </motion.a>

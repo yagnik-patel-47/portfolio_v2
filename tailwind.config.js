@@ -13,7 +13,7 @@ module.exports = {
         "bg-primary": "#101112",
         "text-secondary": "#5F5F5F",
         "white-secondary": "#C3C1BA",
-        "bg-surface": "#191b1c",
+        "bg-surface": "#242729",
       },
     },
   },

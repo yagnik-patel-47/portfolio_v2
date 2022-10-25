@@ -1,4 +1,4 @@
-import { FC, useState } from "react";
+import { FC } from "react";
 import Image from "next/future/image";
 import { FiGithub } from "react-icons/fi";
 import { RiExternalLinkLine } from "react-icons/ri";
@@ -9,7 +9,6 @@ interface Props {
   description: string;
   demoLink: string;
   repoLink: string;
-  shadowColor: string;
   keywords: string[];
 }
 
@@ -19,22 +18,13 @@ const WorkCard: FC<Props> = ({
   description,
   demoLink,
   repoLink,
-  shadowColor,
   keywords,
 }: Props) => {
-  const [isHovered, setIsHovered] = useState(false);
   return (
     <div className="text-white flex flex-col space-y-2">
       <div
-        className={`p-2 rounded-lg border-white-secondary/50 border cursor-pointer hover:-translate-y-2 transition`}
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
+        className="p-2 rounded-lg border-white-secondary/50 border cursor-pointer hover:-translate-y-2 transition hover:scale-[1.01]"
         onClick={() => window.open(demoLink, "_blank")}
-        style={
-          isHovered
-            ? { boxShadow: `0 5px 10px ${shadowColor}` }
-            : { boxShadow: `none` }
-        }
       >
         <Image
           src={image}

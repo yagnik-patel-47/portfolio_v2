@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const Work: FC = () => {
   return (
     <motion.section id="work" className="space-y-12 px-8 md:px-20 lg:px-60">
-      <h2 className="text-white flex flex-col-reverse md:flex-row text-center md:text-left items-center w-full font-openSans font-semibold text-3xl md:text-4xl mt-6 leading-tight tracking-tighter after:mb-8 md:after:mb-0 after:w-1/3 md:after:ml-8 md:after:flex-grow after:h-1 after:bg-white">
+      <h2 className="text-white flex flex-col-reverse md:flex-row text-center md:text-left items-center w-full font-openSans font-semibold text-3xl md:text-4xl mt-6 leading-tight tracking-tighter after:mb-8 md:after:mb-0 after:w-1/3 md:after:ml-8 md:after:flex-grow after:h-1 after:bg-neutral-200">
         <span>Here are a few of my favorite projects.</span>
       </h2>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -17,7 +17,6 @@ const Work: FC = () => {
             description={project.description}
             demoLink={project.demoLink}
             repoLink={project.repoLink}
-            shadowColor={project.shadowColor}
             keywords={project.keywords}
             key={i}
           />
