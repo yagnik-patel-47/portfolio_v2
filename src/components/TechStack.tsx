@@ -82,6 +82,7 @@ const TechStack: FC = () => {
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
               className="w-12 lg:w-16"
+              alt="tailwindcss logo"
             />
             <p>Tailwind</p>
           </div>

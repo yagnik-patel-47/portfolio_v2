@@ -46,22 +46,16 @@ const Nav: FC = () => {
 
   useEffect(() => {
     if (navRef.current) {
-      if (typeof window !== "undefined") {
-        document.documentElement.style.scrollPaddingTop = `${
-          parseInt(window.getComputedStyle(navRef.current).height) + 40
-        }px`;
-        dispatch(
-          setNavHeight(parseInt(window.getComputedStyle(navRef.current).height))
-        );
-      }
+      document.documentElement.style.scrollPaddingTop = `${
+        parseInt(window.getComputedStyle(navRef.current).height) + 40
+      }px`;
+      dispatch(
+        setNavHeight(parseInt(window.getComputedStyle(navRef.current).height))
+      );
     }
-    window.addEventListener("scroll", (e) => {
-      if (window.scrollY > 100) {
-        setGlassNav(true);
-      } else {
-        setGlassNav(false);
-      }
-    });
+    window.addEventListener("scroll", () =>
+      window.scrollY > 100 ? setGlassNav(true) : setGlassNav(false)
+    );
   }, []);
   return (
     <LayoutGroup>
@@ -164,9 +158,9 @@ const Nav: FC = () => {
         </motion.div>
         {!isTabletOrMobile && (
           <div className="text-white-secondary flex items-center space-x-16">
-            <Link href="#work">Work</Link>
-            <Link href="#techstack">Tech Stack</Link>
-            <Link href="#contact">Contact</Link>
+            <a href="#work">Work</a>
+            <a href="#techstack">Tech Stack</a>
+            <a href="#contact">Contact</a>
           </div>
         )}
         <AnimatePresence mode="popLayout">
