@@ -1,11 +1,19 @@
 const projects = [
   {
+    title: "Image Gallery",
+    image: "/images/cars_gallery.webp",
+    description: "An image gallery with awesome animations.",
+    demoLink: "https://animated0casestudy.vercel.app",
+    repoLink: "https://github.com/Yagnik-Patel-47/animated_casestudy",
+    keywords: ["React", "Framer Motion", "Typescript", "TailwindCSS"],
+  },
+  {
     title: "Lego - Landing page",
     image: "/images/lego.webp",
     description: "A landing page for real estate ecommerce website.",
     demoLink: "https://lego-one.vercel.app",
     repoLink: "https://github.com/Yagnik-Patel-47/lego",
-    keywords: ["Next.js", "Typescript", "TailwindCSS"],
+    keywords: ["Nextjs", "Typescript", "TailwindCSS"],
   },
   {
     title: "Dischat",
@@ -40,7 +48,7 @@ const projects = [
       "An online multiplayer rock paper scissor game which runs completely on browser.",
     demoLink: "https://multiplayer-rps.netlify.app",
     repoLink: "https://github.com/Yagnik-Patel-47/rock-paper-scissor-online",
-    keywords: ["React", "Socket.io"],
+    keywords: ["React", "Framer Motion", "Socket.io"],
   },
   {
     title: "Todo App",

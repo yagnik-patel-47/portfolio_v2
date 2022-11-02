@@ -33,7 +33,12 @@ const WorkCard: FC<Props> = ({
           height={551}
           quality={100}
           priority
-          style={{ width: "100%", height: "auto" }}
+          style={{
+            width: "100%",
+            height: "auto",
+            aspectRatio: "1920/979",
+            objectFit: "cover",
+          }}
         />
       </div>
       <div className="flex justify-between items-center !mt-4">
