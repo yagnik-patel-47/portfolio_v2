@@ -115,7 +115,7 @@ const Nav = () => {
                     key={animationState}
                   >
                     <img
-                      src="/profile.png"
+                      src="/profile.webp"
                       alt="profile"
                       className="max-h-full max-w-full object-cover"
                     />

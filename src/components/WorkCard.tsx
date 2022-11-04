@@ -31,7 +31,10 @@ const WorkCard = ({
           width={1080}
           height={551}
           quality={100}
-          priority
+          priority={image === "/images/lego.webp"}
+          sizes="(max-width: 768px) 90vw,
+              (max-width: 1200px) 40vw,
+              30vw"
           style={{
             width: "100%",
             height: "auto",
@@ -48,6 +51,7 @@ const WorkCard = ({
             href={repoLink}
             target="_blank"
             rel="noreferrer"
+            aria-label="github repo"
           >
             <FiGithub />
           </a>
@@ -56,6 +60,7 @@ const WorkCard = ({
             href={demoLink}
             target="_blank"
             rel="noreferrer"
+            aria-label="demo"
           >
             <RiExternalLinkLine />
           </a>

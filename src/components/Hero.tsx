@@ -13,7 +13,7 @@ const Hero = () => {
     >
       <div className="rounded-full overflow-hidden">
         <Image
-          src="/profile.png"
+          src="/profile.webp"
           alt="Profile"
           width={150}
           height={150}

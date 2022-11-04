@@ -29,7 +29,7 @@ a {
 }
 
 .gradient-text {
-  background: url(../../public/gradient.png);
+  background: url(../../public/gradient.webp);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
