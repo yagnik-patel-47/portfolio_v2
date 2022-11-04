@@ -1,4 +1,3 @@
-import { FC } from "react";
 import Image from "next/image";
 import { FiGithub } from "react-icons/fi";
 import { RiExternalLinkLine } from "react-icons/ri";
@@ -12,7 +11,7 @@ interface Props {
   keywords: string[];
 }
 
-const WorkCard: FC<Props> = ({
+const WorkCard = ({
   title,
   image,
   description,

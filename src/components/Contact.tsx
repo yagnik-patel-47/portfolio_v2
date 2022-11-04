@@ -1,23 +1,22 @@
-import { FC } from "react";
 import { HiMail } from "react-icons/hi";
 import { FaInstagram, FaTwitter, FaDiscord, FaGithub } from "react-icons/fa";
 
-const Contact: FC = () => {
+const Contact = () => {
   return (
     <section
       id="contact"
-      className="space-y-12 px-8 md:px-24 md:mt-12 lg:px-60"
+      className="space-y-12 px-8 md:px-24 md:mt-12 lg:px-40 xl:px-60 2xl:px-96"
     >
       <h2 className="text-white font-openSans text-center text-3xl md:text-4xl font-semibold mt-6 leading-tight tracking-tighter">
         Contact
       </h2>
       <div className="flex text-white py-8 md:py-20 items-center flex-col lg:flex-row">
         <div
-          className="flex flex-col items-center"
+          className="flex flex-col items-center lg:items-start"
           style={{ flexBasis: "50%" }}
         >
           <div className="flex flex-col space-y-8">
-            <h1 className="font-medium text-3xl md:text-5xl">
+            <h1 className="font-medium text-3xl md:text-5xl lg:text-4xl xl:text-5xl">
               Let's have a Chat.
             </h1>
             <p className="text-white-secondary text-xl md:text-2xl font-light">
@@ -32,7 +31,7 @@ const Contact: FC = () => {
           </div>
         </div>
         <div
-          className="flex flex-col items-start md:items-center mt-8 lg:mt-0"
+          className="flex flex-col items-start md:items-center lg:items-end mt-8 lg:mt-0"
           style={{ flexBasis: "50%" }}
         >
           <ul className="text-white-secondary font-openSans font-bold space-y-5 md:text-2xl text-lg">

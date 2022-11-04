@@ -1,10 +1,8 @@
-import { FC } from "react";
-
-const TechStack: FC = () => {
+const TechStack = () => {
   return (
     <section
       id="techstack"
-      className="space-y-12 px-8 md:px-24 lg:px-60 mt-16 md:mt-32"
+      className="space-y-12 px-8 md:px-24 lg:px-40 xl:px-60 2xl:px-96 mt-16 md:mt-32"
     >
       <h2 className="text-white flex flex-col-reverse md:flex-row text-center md:text-left items-center w-full font-openSans font-semibold text-3xl md:text-4xl mt-6 leading-tight tracking-tighter after:mb-8 md:after:mb-0 after:w-1/3 md:after:ml-8 md:after:flex-grow after:h-1 after:bg-neutral-200">
         <span>Here is my toolbelt for success.</span>

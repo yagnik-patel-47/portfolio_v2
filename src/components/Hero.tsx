@@ -1,15 +1,14 @@
-import { FC } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useAppSelector } from "../redux/reduxHooks";
 import { useMediaQuery } from "react-responsive";
 
-const Hero: FC = () => {
+const Hero = () => {
   const nabHeight = useAppSelector((state) => state.navHeight);
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   return (
     <motion.div
-      className={`py-24 px-8 md:px-24 lg:px-60 flex flex-col items-center`}
+      className={`py-24 px-8 md:px-24 lg:px-40 xl:px-60 2xl:px-96 flex flex-col items-center`}
       style={{ marginTop: `${nabHeight}px` }}
     >
       <div className="rounded-full overflow-hidden">

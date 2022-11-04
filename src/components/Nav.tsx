@@ -1,7 +1,6 @@
 import { motion, AnimatePresence, LayoutGroup } from "framer-motion";
-import { FC, useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import { BsPerson } from "react-icons/bs";
-import Link from "next/link";
 import { useAppDispatch } from "../redux/reduxHooks";
 import { setNavHeight } from "../redux/navHeight";
 import { useMediaQuery } from "react-responsive";
@@ -36,7 +35,7 @@ const item_variants = {
   },
 };
 
-const Nav: FC = () => {
+const Nav = () => {
   const [animationState, setAnimationState] = useState("notHovered");
   const [glassNav, setGlassNav] = useState(false);
   const navRef = useRef<HTMLElement>(null);
@@ -60,7 +59,7 @@ const Nav: FC = () => {
   return (
     <LayoutGroup>
       <motion.nav
-        className={`flex py-6 px-8 md:px-24 lg:px-60 justify-between items-center fixed w-full top-0 z-50 overflow-hidden border-b-[1px] border-b-[rgba(248,250,252,0.06)] ${
+        className={`flex py-6 px-8 md:px-24 lg:px-40 xl:px-60 2xl:px-96 justify-between items-center fixed w-full top-0 z-50 overflow-hidden border-b-[1px] border-b-[rgba(248,250,252,0.06)] ${
           glassNav || hamburgerState ? "glass_bg" : ""
         } ${isTabletOrMobile ? "flex-col" : "flex-row"}`}
         ref={navRef}

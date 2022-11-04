@@ -1,7 +1,6 @@
-import { FC } from "react";
 import { HiArrowNarrowUp } from "react-icons/hi";
 
-const ScrollTop: FC = () => {
+const ScrollTop = () => {
   return (
     <a
       className="fixed right-8 bottom-8 md:right-20 md:bottom-16 p-3 md:p-4 rounded-full border-blue-500 border glass_bg no-tap-highlight"
