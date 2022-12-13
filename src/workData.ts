@@ -17,7 +17,7 @@ const projects = [
   },
   {
     title: "Dischat",
-    image: "/images/dischat.webp",
+    image: "/images/dischat_.webp",
     description:
       "A chat app having very basic features of discord with animations.",
     demoLink: "https://dischat.vercel.app",
@@ -26,7 +26,7 @@ const projects = [
   },
   {
     title: "Moments",
-    image: "/images/moments.webp",
+    image: "/images/moments_.webp",
     description:
       "A social media app clone having features similar to Instagram.",
     demoLink: "https://moments-sma.vercel.app",
@@ -52,7 +52,7 @@ const projects = [
   },
   {
     title: "Todo App",
-    image: "/images/todo.webp",
+    image: "/images/todo_.webp",
     description:
       "A Todo App made using vanilla javascript with animejs animations.",
     demoLink: "https://todoapp-ca.netlify.app",
@@ -61,7 +61,7 @@ const projects = [
   },
   {
     title: "Flip Game",
-    image: "/images/flip.webp",
+    image: "/images/flip_.webp",
     description: "A Flip card guessing game made using vanilla javascript.",
     demoLink: "https://flipgame-ca.netlify.app",
     repoLink: "https://github.com/Yagnik-Patel-47/vanilla-js-flip-game",
