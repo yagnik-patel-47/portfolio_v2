@@ -1,7 +1,7 @@
 const projects = [
   {
     title: "Image Gallery",
-    image: "/images/cars_gallery.webp",
+    image: "/images/gallery.webp",
     description: "An image gallery with awesome animations.",
     demoLink: "https://animated0casestudy.vercel.app",
     repoLink: "https://github.com/Yagnik-Patel-47/animated_casestudy",
@@ -17,7 +17,7 @@ const projects = [
   },
   {
     title: "Dischat",
-    image: "/images/Dischat.webp",
+    image: "/images/dischat.webp",
     description:
       "A chat app having very basic features of discord with animations.",
     demoLink: "https://dischat.vercel.app",
@@ -26,7 +26,7 @@ const projects = [
   },
   {
     title: "Moments",
-    image: "/images/Moments.webp",
+    image: "/images/moments.webp",
     description:
       "A social media app clone having features similar to Instagram.",
     demoLink: "https://moments-sma.vercel.app",
@@ -35,7 +35,7 @@ const projects = [
   },
   {
     title: "WhatsApp 2.0",
-    image: "/images/WhatsApp-2.webp",
+    image: "/images/whatsapp_2.webp",
     description: "A whatsapp clone having all basic features of whatsapp.",
     demoLink: "https://whatsapp2-0-ca.vercel.app",
     repoLink: "https://github.com/Yagnik-Patel-47/whatsapp2.0",
@@ -43,7 +43,7 @@ const projects = [
   },
   {
     title: "RPS Multiplayer",
-    image: "/images/Online-RPS.webp",
+    image: "/images/rps.webp",
     description:
       "An online multiplayer rock paper scissor game which runs completely on browser.",
     demoLink: "https://multiplayer-rps.netlify.app",
@@ -52,7 +52,7 @@ const projects = [
   },
   {
     title: "Todo App",
-    image: "/images/Todo.webp",
+    image: "/images/todo.webp",
     description:
       "A Todo App made using vanilla javascript with animejs animations.",
     demoLink: "https://todoapp-ca.netlify.app",
@@ -61,7 +61,7 @@ const projects = [
   },
   {
     title: "Flip Game",
-    image: "/images/Flip.webp",
+    image: "/images/flip.webp",
     description: "A Flip card guessing game made using vanilla javascript.",
     demoLink: "https://flipgame-ca.netlify.app",
     repoLink: "https://github.com/Yagnik-Patel-47/vanilla-js-flip-game",

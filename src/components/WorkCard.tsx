@@ -38,7 +38,7 @@ const WorkCard = ({
           style={{
             width: "100%",
             height: "auto",
-            aspectRatio: "1920/979",
+            aspectRatio: "1000/750",
             objectFit: "cover",
           }}
         />

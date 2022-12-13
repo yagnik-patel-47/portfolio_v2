@@ -64,7 +64,7 @@ const Contact = () => {
             </li>
             <li>
               <a
-                href="https://twitter.com/Yagnik__Patel_"
+                href="https://twitter.com/yagnik_ptl"
                 className="flex space-x-5 items-center hover:text-white"
               >
                 <FaTwitter size={30} color="#3b82f6" />
